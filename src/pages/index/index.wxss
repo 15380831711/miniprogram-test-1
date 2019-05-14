@@ -1,0 +1,24 @@
+/**引入外部公共样式库，app.wxss内引入，不必所有pages内再引入**/
+/* @import "../../assets/css/weui.wxss"; */
+
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 228rpx;
+  height: 228rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 20px;
+}

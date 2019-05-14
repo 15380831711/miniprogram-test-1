@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname text_one">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view>
+    <button bindtap='httpTest'>发起网络请求</button>
+    <button bindtap='httpTest2'>发起网络请求</button>
+    <button bindtap='startRefresh' type="primary">开始下拉刷新</button>
+    <button bindtap='stopRefresh'>停止下拉刷新</button>
+    <button bindtap='startScroll'>滚动</button>
+  </view>
+  <!-- <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+</view>

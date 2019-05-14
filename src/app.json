@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/news/news",
+    "pages/user/user"
+  ],
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#DC143C",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/imgs/tabs/homea.png",
+        "selectedIconPath": "assets/imgs/tabs/homea_on.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "iconPath": "assets/imgs/tabs/homeb.png",
+        "selectedIconPath": "assets/imgs/tabs/homeb_on.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundColor": "#f01450",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#f01450",
+    "navigationBarTitleText": "navigationBarTitleText-wx小程序",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}
