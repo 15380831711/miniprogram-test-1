@@ -1,4 +1,7 @@
 <!--logs.wxml-->
+
+<button bindtap='useAppSrv' type='primary'>调用AppService</button>
+
 <view class="container log-list">
   <block wx:for="{{logs}}" wx:for-item="log">
     <image bindtap='bindViewClick' src='../../assets/imgs/wx.png'></image>

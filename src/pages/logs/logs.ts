@@ -1,5 +1,8 @@
 //logs.js
-import { formatTime } from '../../providers/util'
+import { formatTime } from '../../providers/util';
+
+import { AlterServiceProvider } from '../../providers/alert-service/alter-service';
+const appService = new AlterServiceProvider();
 
 Page({
   data: {
@@ -20,5 +23,9 @@ Page({
       })
     })
   },
+
+  useAppSrv(){
+      appService.alert(" AppService.alert() ");
+  }
   
 })

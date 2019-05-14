@@ -7,14 +7,19 @@
       <text class="userinfo-nickname text_one">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <view>
-    <button bindtap='httpTest'>发起网络请求</button>
-    <button bindtap='httpTest2'>发起网络请求</button>
-    <button bindtap='startRefresh' type="primary">开始下拉刷新</button>
-    <button bindtap='stopRefresh'>停止下拉刷新</button>
-    <button bindtap='startScroll'>滚动</button>
-  </view>
   <!-- <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view> -->
 </view>
+
+<button bindtap='switchTab' type="primary">切换跳转tab页面</button>
+<button bindtap='bindViewTap'>跳转页面</button>
+<button bindtap='httpTest' type="primary">发起网络请求</button>
+<button bindtap='httpTest2'>发起网络请求</button>
+<button bindtap='startRefresh' type="primary">开始下拉刷新</button>
+<button bindtap='stopRefresh'>停止下拉刷新</button>
+<button bindtap='startScroll' type="primary">滚动</button>
+<button bindtap='showToast'>提示框</button>
+<button bindtap='showLoading' type="primary" loading="true">loading</button>
+<button bindtap='showModal'>模态弹窗(alert、confirm)</button>
+<button bindtap='showModal' disabled="true">禁用</button>
